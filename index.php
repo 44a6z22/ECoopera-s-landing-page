@@ -27,7 +27,7 @@
 
   <div class="overlay"></div>
 
-  <img src="img\bg-mobile-fallback.jpg" alt="">
+  <img src="img\3290500.jpg" alt="">
 
   <div class="masthead">
     <div class="masthead-bg"></div>
@@ -40,7 +40,7 @@
               <strong>Mai 2020</strong>! Sign up for updates using the form below!</p>
             <form action="backend\notifyme.php" method="post" name="notifyMeForm">
               <?php
-                include "backend/Validators/Errorschecker.php";
+              include "backend/Validators/Errorschecker.php";
               ?>
               <div class="input-group input-group-newsletter">
                 <input type="email" class="form-control" placeholder="Enter Email..." name="email" aria-describedby="basic-addon">

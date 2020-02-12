@@ -8,10 +8,15 @@ if (isset($_GET["Error"])) {
         <?= $placeHolder = Errors::$ERRORS_ARRAY[$_GET["Error"]]; ?>
     </div>
     <script>
-        setTimeOut(() => {
-            var div = document.querySelector("#thisAlert");
-            div.classList.add("display-none");
-        }, 20000);
+        let danger = document.querySelector('#thisAlert');
+
+        setTimeout(() => {
+            danger.style.transition = "1s";
+            danger.style.opacity = 0;
+        }, 500);
+        setTimeout(() => {
+            danger.style.display = "none";
+        }, 1000);
     </script>
 <?php
 }
