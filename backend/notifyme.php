@@ -13,7 +13,8 @@
 
             // check if the email has been registered successfuly 
             if ($stmt->execute($parameters)) {
-                header("location:../");
+            // header();
+            header(ErrorsReditictions::$REDIRICTIONS_ARRAY["EMAIL-SENT"]);
             } 
             else 
             {
