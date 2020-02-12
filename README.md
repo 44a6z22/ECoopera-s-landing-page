@@ -6,7 +6,7 @@
 
 [![Coming Soon Preview](https://startbootstrap.com/assets/img/screenshots/themes/coming-soon.png)](https://E-coopera.com/)
 
-**[View Live Preview](https://E-coopera.com/)**
+![alt text](img\screeny.png)
 
 ## Status
 
