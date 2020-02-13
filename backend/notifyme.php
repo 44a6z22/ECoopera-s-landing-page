@@ -2,6 +2,8 @@
 
     include "includes/connection.php";
     include "const.php"; 
+    
+    use Consts\ErrorsReditictions;
 
     if  ( isset( $_POST["notifyMeSubmit"] ) )
     {
