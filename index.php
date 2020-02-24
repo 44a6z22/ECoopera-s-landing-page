@@ -41,7 +41,7 @@
               <strong>Mai 2020</strong>! Sign up for updates using the form below!</p>
             <form action="backend\notifyme.php" method="post" name="notifyMeForm">
               <?php
-              include "backend/Validators/Errorschecker.php";
+                include "backend/Validators/Errorschecker.php";
               ?>
               <div class="input-group input-group-newsletter">
                 <input type="email" class="form-control" placeholder="Enter Email..." name="email" aria-describedby="basic-addon">

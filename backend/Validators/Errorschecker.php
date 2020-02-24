@@ -1,13 +1,15 @@
 <?php
-
     include "backend/const.php";
     include "backend/Classes/Alerts.php";
-
+    
     use Alerts\AlertsHandler;
-       
-    $ok = new AlertsHandler($_GET);
-    echo $ok->Render();
-
+    
+    // create an AlertHandler Object 
+    $alert = new AlertsHandler($_GET);
+    
+    // then renders what ever AlertType got selected.
+    $alert->Render();
+    
 ?>
 
 <script>
