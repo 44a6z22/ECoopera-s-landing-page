@@ -18,7 +18,8 @@
                 "EMAIL-NOT-REGISTERED"  => "location:../?Error=EMAIL-NOT-REGISTERED",
                 "NOT-SUBMITED"          => "location:../?Error=NOT-SUBMITED",
                 "UNAUTH-PERMITION"      => "location:../?Error=UNAUTH-PERMITION",
-                "EMAIL-SENT"            => "location:../?Success=EMAIL-SENT"
+                "EMAIL-SENT"            => "location:../?Success=EMAIL-SENT", 
+                "HOME"                  => "location: ../"
     
             );
         }
