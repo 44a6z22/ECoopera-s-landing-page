@@ -1,5 +1,5 @@
 <?php
-    namespace Consts{
+    namespace backend\Consts;
 
         class Errors
         {
@@ -23,6 +23,6 @@
     
             );
         }
-    }
+    
    
 ?>

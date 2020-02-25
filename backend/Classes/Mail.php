@@ -1,6 +1,7 @@
 <?php
 
-namespace Mails{
+    namespace backend\Classes\Mails;
+    
     /**
      * this class is responsible of mails 
      */
@@ -17,13 +18,15 @@ namespace Mails{
      */
     class SubscribtionMail implements IMail
     {
-        const   MESSAGE    = "custom messages"; 
-        const   SUBJECT    = "NOREPLY"; 
-        const   FROM       = "noreply@e-coopera.com"; 
-        const   HEADER     = "From : " . self::FROM;
+        const   MESSAGE    = "you have been successfuly subscribed to our news letter we will inform you as soon as our website gets lauched", 
+                SUBJECT    = "NOREPLY",
+                FROM       = "noreply@e-coopera.com", 
+                HEADER     = "From : " . self::FROM;
+
         private $to ; 
 
-        public function __construct($to){
+        public function __construct (String $to)
+        {
             $this->to       = $to ;
         }
 
@@ -31,15 +34,17 @@ namespace Mails{
          * This method from SubscribtionMailis to send email to potential clients.
          * Informing them that they have been successfuly subscribed to the news letter.
          */
-        public function Send()
+        public function Send ()
         {
-
-            return mail($this->to, self::MESSAGE, self::SUBJECT, self::HEADER);
+            return "Sent";
+            // return mail($this->to, self::MESSAGE, self::SUBJECT, self::HEADER);
         }
 
-        
     }
-   
-}
+
+    $email = new SubscribtionMail("hhamdaoui31@gmail.com");
+    echo $email->Send(); 
+
+// }
 
 ?>

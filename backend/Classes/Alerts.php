@@ -1,9 +1,9 @@
 <?php
 
-namespace Alerts {
+    namespace backend\Classes\Alerts;
+    use backend\Consts\Errors;
+         
 
-    use Consts\Errors;
-    
     interface IAlertTrigger
     {
         public function Render();
@@ -22,10 +22,12 @@ namespace Alerts {
     class AlertSuccess implements IAlertTrigger
     {
         private $message;
+
         public function __construct($none)
         {
             $this->message = $none;
         }
+
         public function Render()
         {
             return 
@@ -76,9 +78,10 @@ namespace Alerts {
                 $this->alert = new AlertNone();
             }
         }
+        
         // RENDERS WHATEVER ALERT GOT PICKED
         public function Render(){
             echo $this->alert->Render();
         }
     }
-}
+

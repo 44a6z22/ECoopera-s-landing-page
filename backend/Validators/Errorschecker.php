@@ -2,7 +2,7 @@
     include "backend/const.php";
     include "backend/Classes/Alerts.php";
     
-    use Alerts\AlertsHandler;
+    use backend\Classes\Alerts\AlertsHandler;
     
     // create an AlertHandler Object 
     $alert = new AlertsHandler($_GET);

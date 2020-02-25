@@ -3,8 +3,8 @@
     include "const.php";
     include "Classes/Mail.php";
 
-    use Consts\ErrorsReditictions;
-    use Mails\SubscribtionMail;
+    use backend\Consts\ErrorsReditictions;
+    use backend\Classes\Mails\SubscribtionMail;
 
     if  ( isset( $_POST["notifyMeSubmit"] ) )
     {
@@ -18,8 +18,7 @@
             if ($stmt->execute($parameters)) 
             {
                 // create new email object to send a notification email to the subscriber, 
-                // informing them that they have bee subscribed successfuly.
-
+                // informing them that they have been subscribed successfuly.
                 $email = new SubscribtionMail($_POST["email"]); 
 
                 if($email->Send())
@@ -30,7 +29,6 @@
                 {
                     header(ErrorsReditictions::REDIRICTIONS_ARRAY["EMAIL-NOT-REGISTERED"]);
                 }
-                
             } 
             else 
             {
